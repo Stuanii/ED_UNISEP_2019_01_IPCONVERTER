@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertendo IPs</title>
+    <script src="script.ts"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link rel="stylesheet" href="style.css"/>
+          
+</head>
+<body>
+
+    <section class="container">
+               
+
+        <h5>IP Converter</h5>
+
+        <blockquote>
+                Atividade desenvolvida na aula de Estrutura de dados. <br/>
+                Prof. Cleiton Migliorini.
+                <br/><br/>
+                Objetivo : Utilização de vetores.
+        </blockquote>
+
+        
+        <div class="row">
+            <form class="col s12">
+            
+                <div class="row">
+                        <div class="input-field col offset-s3 s6">
+                              <input id="ip" type="text" class="validate">
+                              <label for="email">IP</label>
+                              <span class="helper-text" >Formato do IP XXX.XXX.XXX.XXX</span>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s12 center">
+                                <a class="waves-effect waves-light btn" onclick="converterBinario()" >Converter</a>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 center">
+                        <span>IP Convertido para binário : </span><br/>
+                        <div class="input-field col s2 left">
+                                <h5 >Decimal</h5>
+                                <h5> Binário</h5>
+                            </div>
+                        <div class="input-field col offset-s1 s2 center bold">
+                            <h5 id="ip_1">255</h5>
+                            <hr/>
+                            <h5 id="ipConvertido_1">11111111</h5>
+                        </div>
+                        <div class="input-field col s2 center bold">
+                            <h5 id="ip_2">255</h5>
+                            <hr/>
+                            <h5 id="ipConvertido_2">11111111</h5>
+                        </div>
+                        <div class="input-field col s2 center bold">
+                            <h5 id="ip_3">255</h5>
+                            <hr/>
+                            <h5 id="ipConvertido_3">11111111</h5>
+                        </div>
+                        <div class="input-field col s2 center bold">
+                            <h5 id="ip_4">255</h5>
+                            <hr/>
+                            <h5 id="ipConvertido_4">11111111</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+    </section>
+    
+
+       <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
